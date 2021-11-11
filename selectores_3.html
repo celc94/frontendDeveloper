@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    p {
+        color: blueviolet;
+    }
+    p:hover {
+        color: chartreuse;
+    }
+    div p:nth-child(2) {
+        color: crimson;
+    }
+    p::first-letter {
+        color: lime;
+    }
+    p::before {
+        content: "✔";
+    }
+    p::after {
+        content: "🍕";
+    }
+    ::placeholder {
+        color: mediumblue;
+    }
+</style>
+<body>
+    <p>Selectores</p>
+    <div>
+        <p>Platzi</p>
+        <p>Master</p>
+        <p>Escuela JS</p>
+    </div>
+    <input type="text" placeholder="Name">
+</body>
+</html>
